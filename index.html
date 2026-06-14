@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; connect-src 'self' https://api.github.com; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://avatars.githubusercontent.com; frame-ancestors 'none';">
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miguel Costa | PortfolioHUB</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">Miguel<span>Costa</span></div>
+        <nav>
+            <a href="#inicio" data-pt="Início" data-en="Home">Início</a>
+            <a href="#sobre" data-pt="Sobre" data-en="About">Sobre</a>
+            <a href="#projetos" data-pt="Projetos" data-en="Projects">Projetos</a>
+            <a href="#conquistas" data-pt="Conquistas" data-en="Achievements">Conquistas</a>
+        </nav>
+        <div class="lang-selector">
+            <button id="btn-pt" class="active">PT</button>
+            <button id="btn-en">EN</button>
+        </div>
+    </header>
+
+    <section id="inicio" class="hero-section">
+        <div class="hero-content">
+            <h1 data-pt="Olá, sou Miguel Costa" data-en="Hi, I'm Miguel Costa">Olá, sou Miguel Costa</h1>
+            <p data-pt="Estudante de Ciência da Computação focado em desenvolvimento, matemática e segurança digital." 
+               data-en="Computer Science student focused on software development, mathematics, and digital security.">
+               Estudante de Ciência da Computação focado em desenvolvimento, matemática e segurança digital.
+            </p>
+            <a href="#projetos" class="btn-primary" data-pt="Ver Projetos" data-en="View Projects">Ver Projetos</a>
+        </div>
+    </section>
+
+    <section id="sobre" class="about-section">
+        <h2 data-pt="Sobre Mim" data-en="About Me">Sobre Mim</h2>
+        <div class="about-container">
+            <p data-pt="Aliando a disciplina, resiliência e foco adquiridos durante minha trajetória no Colégio Militar, hoje dedico minha energia ao universo tecnológico como estudante de Ciência da Computação no UniCEUB. Busco constantemente expandir meus limites através de estudos profundos e autônomos, como a formação do CS50 da Universidade de Harvard, onde aprimoro minhas habilidades práticas em lógica de programação com Python e conceitos avançados de Cibersegurança."
+               data-en="Combining the discipline, resilience, and focus acquired during my time at the Military College, I now dedicate my energy to the tech world as a Computer Science student at UniCEUB. I constantly seek to push my boundaries through deep, autonomous studies such as Harvard University's CS50, where I sharpen my practical programming logic with Python and advanced Cybersecurity concepts.">
+               Aliando a disciplina, resiliência e foco adquiridos durante minha trajetória no Colégio Militar, hoje dedico minha energia ao universo tecnológico como estudante de Ciência da Computação no UniCEUB. Busco constantemente expandir meus limites através de estudos profundos e autônomos, como a formação do CS50 da Universidade de Harvard, onde aprimoro minhas habilidades práticas em lógica de programação com Python e conceitos avançados de Cibersegurança.
+            </p>
+            <a href="curriculo.pdf" download class="btn-secondary" data-pt="📥 Baixar Currículo Completo (PDF)" data-en="📥 Download Full CV (PDF)">
+                📥 Baixar Currículo Completo (PDF)
+            </a>
+        </div>
+    </section>
+
+    <section id="projetos" class="projects-section">
+        <h2 data-pt="📂 Meus Projetos e Estudos" data-en="📂 My Projects & Studies">📂 Meus Projetos e Estudos</h2>
+        <p class="section-subtitle" data-pt="Repositórios atualizados dinamicamente a partir do GitHub" data-en="Repositories dynamically updated directly from GitHub">Repositórios atualizados dinamicamente a partir do GitHub</p>
+        
+        <div id="container-projetos" class="grid-projetos">
+            <p data-pt="Carregando projetos do GitHub..." data-en="Loading projects from GitHub...">Carregando projetos do GitHub...</p>
+        </div>
+    </section>
+
+    <section id="conquistas" class="achievements-section">
+        <h2 data-pt="🏆 Conquistas e Diferenciais" data-en="🏆 Achievements & Merits">🏆 Conquistas e Diferenciais</h2>
+        <div class="grid-achievements">
+            <div class="card-achievement">
+                <h3>🏅 Matemática & Astronomia</h3>
+                <p data-pt="Histórico de destaque e premiações em Olimpíadas de Matemática e na OBA (Olimpíada Brasileira de Astronomia), refletindo forte raciocínio lógico-matemático."
+                   data-en="A history of excellence and awards in Mathematics Olympiads and OBA (Brazilian Astronomy Olympiad), reflecting sharp logical-mathematical reasoning.">
+                   Histórico de destaque e premiações em Olimpíadas de Matemática e na OBA (Olimpíada Brasileira de Astronomia), refletindo forte raciocínio lógico-matemático.
+                </p>
+            </div>
+            <div class="card-achievement">
+                <h3>♟️ Xadrez</h3>
+                <p data-pt="Praticante dedicado, utilizando o xadrez como ferramenta para o aprimoramento de tomada de decisões estratégicas, paciência e análise de cenários complexos."
+                   data-en="Dedicated practitioner, leveraging chess as a tool for improving strategic decision-making, patience, and complex scenario analysis.">
+                   Praticante dedicado, utilizando o xadrez como ferramenta para o aprimoramento de tomada de decisões estratégicas, paciência e análise de cenários complexos.
+                </p>
+            </div>
+            <div class="card-achievement">
+                <h3>🎵 Trajetória Musical</h3>
+                <p data-pt="Estudo e prática de música, desenvolvendo disciplina individual, foco de longo prazo, sensibilidade artística e coordenação cognitiva avançada."
+                   data-en="Music study and practice, fostering individual discipline, long-term focus, artistic sensitivity, and advanced cognitive coordination.">
+                   Estudo e prática de música, desenvolvendo disciplina individual, foco de longo prazo, sensibilidade artística e coordenação cognitiva avançada.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Miguel Costa. PortfolioHUB - All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
