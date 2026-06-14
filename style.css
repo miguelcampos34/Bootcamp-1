@@ -1,0 +1,248 @@
+/* Configurações Gerais e Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #0d1117;
+    color: #c9d1d9;
+}
+
+/* Barra de Navegação Superior (Navbar) */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: #161b22;
+    border-bottom: 1px solid #30363d;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.navbar .logo span {
+    color: #58a6ff;
+}
+
+.navbar nav a {
+    color: #8b949e;
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.navbar nav a:hover {
+    color: #58a6ff;
+}
+
+/* Seletor de Idiomas */
+.lang-selector button {
+    background: none;
+    border: 1px solid #30363d;
+    color: #8b949e;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.lang-selector button.active {
+    background-color: #58a6ff;
+    color: #0d1117;
+    border-color: #58a6ff;
+}
+
+/* Seções Gerais */
+section {
+    padding: 80px 10%;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Seção Hero (Apresentação) */
+.hero-section {
+    background: radial-gradient(circle at top right, #1f293d, #0d1117);
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.25rem;
+    max-width: 600px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+/* Botões */
+.btn-primary {
+    display: inline-block;
+    background-color: #238636;
+    color: #ffffff;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #2ea043;
+}
+
+.btn-secondary {
+    display: inline-block;
+    background-color: #21262d;
+    color: #58a6ff;
+    border: 1px solid #30363d;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.btn-secondary:hover {
+    background-color: #30363d;
+}
+
+/* Seção Sobre Mim */
+.about-section {
+    background-color: #161b22;
+    border-bottom: 1px solid #30363d;
+    text-align: center;
+}
+
+.about-container p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Seção do HUB de Projetos (CSS Grid Responsivo) */
+.section-subtitle {
+    text-align: center;
+    margin-top: -20px;
+    margin-bottom: 40px;
+    color: #8b949e;
+}
+
+.grid-projetos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Cartões de Projetos */
+.projeto-card {
+    background-color: #161b22;
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid #30363d;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.projeto-card:hover {
+    transform: translateY(-5px);
+    border-color: #58a6ff;
+}
+
+.projeto-card h3 {
+    color: #ffffff;
+    margin-bottom: 12px;
+    font-size: 1.3rem;
+}
+
+.projeto-card p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #8b949e;
+}
+
+.projeto-tags {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.projeto-tags span {
+    background-color: #21262d;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    border: 1px solid #30363d;
+}
+
+.btn-projeto {
+    color: #58a6ff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.95rem;
+}
+
+/* Seção de Conquistas */
+.achievements-section {
+    background-color: #0d1117;
+}
+
+.grid-achievements {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.card-achievement {
+    background-color: #161b22;
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid #30363d;
+}
+
+.card-achievement h3 {
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.card-achievement p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #161b22;
+    border-top: 1px solid #30363d;
+    font-size: 0.9rem;
+    color: #8b949e;
+}
